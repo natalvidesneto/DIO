@@ -1,0 +1,1 @@
+# Separando o consumo da API da manipulação de HTML

@@ -1,0 +1,1 @@
+# Utilizando a função Map para dimminuir a verbosidade do nosso Código

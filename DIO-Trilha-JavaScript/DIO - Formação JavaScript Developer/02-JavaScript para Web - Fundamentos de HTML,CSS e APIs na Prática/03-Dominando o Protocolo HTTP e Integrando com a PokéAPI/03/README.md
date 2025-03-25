@@ -1,0 +1,1 @@
+# Manipulando o resultado da requisição através de uma Promise

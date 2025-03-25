@@ -1,0 +1,68 @@
+***************** Introdução a API *****************
+API é um servidor que serve dados.
+
+***************** Como funcionam as requisições *****************
+O cliente faz um pedido o servidor processa a informção e devolver.
+
+***************** Url Path e Method *****************
+
+Para monta uma requisição temos primeiro a "url".
+A "url" é composta de Path e Method.
+
+Url: https://pokeapi.co/api/v2/pokemon
+     ${IP} --> https://pokeapi.co
+     ${path} --> api/v2/pokemon
+IP --> enderênço
+path --> caminho de identificação do recurso
+
+Lembrando que Ip é conhecido também como dominio:
+IP: https://pokeapi.co
+
+O DNS pesquisa o enderênço IP em sua lista e converte para possamos
+entender.
+
+Caso fosse um enderênço local iriamos ver:
+http://127.0.8.2:8080
+
+ip:http://127.0.8.2
+porta: 8080
+
+Quando fazemos uma solicitação ou requisição, temos que entender
+que existem vários tipos.
+Por exemplo quando digitamos uma url no browser estamos fazendo uma requisição do tipo GET.
+Request Method: GET, POST, PUT, DELETE
+GET--> o servidor entende que queremos buscar esse recurso.
+POST --> o servidor entende que queremos inserir algo.
+PUT --> o serve entende que queremos atuliazar algo.
+DELETE --> o serve entende que queremos deleta algo.
+
+*************** Path Params e Query String ***************
+Passando dados para servidor.
+1º forma é pelo Path:
+ex: http://pokeapi.co/api/v2/pokemon/${id}
+    http://pokeapi.co/api/v2/pokemon/1
+
+2º forma e pela Query String(descrição de busca) começa após o ponto de interrogação(?), a Query String
+é uma estrutura de chave e valo:
+ex: http://pokeapi.co/api/v2/pokemon/?
+
+A Query String é uma estrutura de chave é valor.
+ex: http://pokeapi.co/api/v2/pokemon/?type=grass --> buscando Pokemons do tipo grama
+
+Para adicionar mais argumentos da Query String usamos o operador & (comercial).
+ex: http://pokeapi.co/api/v2/pokemon/?type=grass&name=i
+
+******** Headers ********
+Headers são as configurações das requisições.
+
+Response Headers
+    E a congirução da API
+
+Request Headers
+
+
+****** Body e Status Code *******
+Body é corpo da requisição, e onde queremos trafegar o dado.
+
+Status Code significa --> sucesso
+

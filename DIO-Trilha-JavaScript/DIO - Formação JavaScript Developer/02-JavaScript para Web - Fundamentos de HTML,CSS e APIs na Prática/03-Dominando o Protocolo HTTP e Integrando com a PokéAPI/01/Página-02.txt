@@ -1,0 +1,41 @@
+******** Consumo de API *****
+Para fazer o consumo de uma API usamos o fetch API.
+O fetch nós retorna uma Promise, que é importante para 
+lidar com assincronismo em JavaScript.
+
+Quando fazemos uma requisição naõ temos uma resposta de imediato.
+A requisição é enviada para servidor que analisa e devolve sua resposta.
+
+Um processamento assincrona é uma resposta que não temos de imediato.
+
+Para processa a resposta de requisição temos o método "the()".
+
+Para manipular o erro de uma requisição usamos a método "catch()".
+
+E usamos método "finaly()" para fazer algo no final idependente do sucesso ou fracasso.
+
+O fetch sempre retorna uma string de dados que podemos trabalhar convertendo para "json"
+usando o método "json()".
+
+Podemos ter vários "then()" juntos, o que cai no segundo "then" é a resposta do primeiro
+"teh"
+
+Exe: fetch(url).then(function(resposta){
+    return resposta.json()
+}).the(function(bodyResposta){
+    console.log(bodyResposta)
+})
+
+Uma função anonima não tem nome.
+Ex: function(){
+    console.log("Hello")
+}
+
+Arrow function não a chamada de function.
+Ex: ()=>{
+    console.log("Hello")
+}
+
+Lembrando que Arrow function com uma única linha não precisa do uso da palavra "return"
+
+ex: (resposta) => console.log("Hello")

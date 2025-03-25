@@ -1,0 +1,40 @@
+*{
+    font-family: 'Roboto',sans-serif;
+    /*box-sizing: border-box --> considera a borda como tamanho total*/
+    box-sizing: border-box;
+}
+
+/* rem --> é uma medida relativa com base no dispositivo do usuário */
+/* já o px (pixel) --> é uma media fixa */
+.content{
+    padding: 1rem; 
+}
+
+.content h1 {
+    margin: 0;
+}
+
+ol.pokemons {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+ol.pokemons li{
+    margin: .5rem;
+    padding: 2rem 1rem;
+    background-color: #14a06f;
+    color: #fff;
+    border-radius: 1rem;
+    display: flex;
+    flex-direction: column;
+}
+
+ol.pokemons li img{
+    /* max-width: 100% para que a imagem não saia da área*/
+    max-width: 100%;
+    height: 100px;
+    align-self: flex-end;
+}

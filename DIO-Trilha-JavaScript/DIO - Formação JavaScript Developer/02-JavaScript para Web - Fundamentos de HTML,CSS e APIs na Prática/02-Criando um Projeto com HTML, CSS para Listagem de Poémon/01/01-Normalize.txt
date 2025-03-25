@@ -1,0 +1,2 @@
+Normalize é uma CSS que padroniza todo o estili inicial em uma página Web.
+url: https://cdnjs.com/libraries/normalize
